@@ -1,0 +1,32 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Primary text "AMITDAS" with color animation for "AMIT" part -->
+  <text x="10" y="35" font-size="30" font-family="Arial, sans-serif" font-weight="bold" fill="black">
+    AMITDAS
+    <animate
+      attributeName="fill"
+      values="black;#DD0009;black"
+      dur="4s"
+      repeatCount="indefinite"
+      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
+      calcMode="spline" />
+  </text>
+  
+  <!-- Overlay for "DAS" with opposite color animation -->
+  <text x="10" y="35" font-size="30" font-family="Arial, sans-serif" font-weight="bold" fill="#DD0009" clip-path="url(#mask)">
+    AMITDAS
+    <animate
+      attributeName="fill"
+      values="#DD0009;black;#DD0009"
+      dur="4s"
+      repeatCount="indefinite"
+      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
+      calcMode="spline" />
+  </text>
+
+  <!-- Mask to isolate "DAS" section -->
+  <defs>
+    <clipPath id="mask">
+      <rect x="80" y="0" width="120" height="50" />
+    </clipPath>
+  </defs>
+</svg>
