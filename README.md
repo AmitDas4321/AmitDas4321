@@ -72,23 +72,4 @@ Feel free to connect with me for collaborations or to share your ideas!
 </p>
 
 ## ✍️ Random Dev Quote
-<div align="center">
-  <h2>✍️ Random Dev Quote</h2>
-  <blockquote id="dev-quote" style="font-style: italic; border-left: 5px solid #006C9C; padding-left: 10px; margin: 20px; color: #333;">Loading...</blockquote>
-</div>
-
-<script>
-  async function fetchDevQuote() {
-    try {
-      const response = await fetch('https://programming-quotes-api.herokuapp.com/quotes/random');
-      const data = await response.json();
-      document.getElementById('dev-quote').innerText = `"${data.en}" - ${data.author}`;
-    } catch (error) {
-      document.getElementById('dev-quote').innerText = "Error fetching quote. Please try again.";
-    }
-  }
-
-  // Fetch a new quote every time the page loads
-  fetchDevQuote();
-</script>
-
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
