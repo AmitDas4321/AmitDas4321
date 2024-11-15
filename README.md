@@ -67,7 +67,7 @@ Feel free to connect with me for collaborations or to share your ideas!
 <p align="center">
   <br>
   <kbd style="border: 2px solid #006C9C; padding: 10px; border-radius: 5px;">
-    <img alt="Banner" style="border: 1px solid #006C9C; border-radius: 5px;" src="https://raw.githubusercontent.com/amitdas-official/amitdas-official/output/snake.svg" alt="Snake animation">
+    <img alt="Banner" style="border: 1px solid #006C9C; border-radius: 5px;" src="https://raw.githubusercontent.com/AmitDas4321/AmitDas4321/output/snake.svg" alt="Snake animation">
   </kbd>
 </p>
 
