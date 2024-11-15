@@ -59,9 +59,9 @@ Feel free to connect with me for collaborations or to share your ideas!
 ## 📊 GitHub Stats:
 
 <div align="center">
-  <div> <img src="https://github-readme-stats.vercel.app/api?username=amitdas-official&theme=blueberry&hide_border=false&include_all_commits=true&count_private=true"> </div><br>
-  <div> <img src="https://github-readme-streak-stats.herokuapp.com?user=amitdas-official&theme=blueberry"></div> <br>
-  <div> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amitdas-official&theme=blueberry&hide_border=false&include_all_commits=true&count_private=true&layout=compact"> </div>
+  <div> <img src="https://github-readme-stats.vercel.app/api?username=AmitDas4321&theme=blueberry&hide_border=false&include_all_commits=true&count_private=true"> </div><br>
+  <div> <img src="https://github-readme-streak-stats.herokuapp.com?user=AmitDas4321&theme=blueberry"></div> <br>
+  <div> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmitDas4321&theme=blueberry&hide_border=false&include_all_commits=true&count_private=true&layout=compact"> </div>
 </div>
 
 <p align="center">
