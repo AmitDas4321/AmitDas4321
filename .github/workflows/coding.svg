@@ -1,12 +1,22 @@
 <svg width="498" height="498" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498 498">
-  <!-- Transparent background -->
-  <rect x="10" y="10" width="478" height="478" fill="none" stroke="none" />
+  <!-- Dark GitHub-style background -->
+  <rect x="0" y="0" width="498" height="498" fill="#0d1117" />
   
+  <!-- Terminal-like border -->
+  <rect x="20" y="20" width="458" height="458" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2" />
+  
+  <!-- Title bar -->
+  <rect x="20" y="20" width="458" height="30" fill="#21262d" />
+  <!-- Title bar circles -->
+  <circle cx="35" cy="35" r="6" fill="#f85149" />
+  <circle cx="55" cy="35" r="6" fill="#fbbc06" />
+  <circle cx="75" cy="35" r="6" fill="#34d058" />
+
   <!-- Container for typed code with a glowing effect -->
-  <text id="codeText" text-anchor="middle" font-family="monospace" font-size="20" fill="#00ff00" style="filter: drop-shadow(0px 0px 8px #00ff00);"></text>
+  <text id="codeText" text-anchor="middle" font-family="monospace" font-size="16" fill="#c9d1d9" style="filter: drop-shadow(0px 0px 5px #c9d1d9);"></text>
   
   <!-- Block-style blinking cursor -->
-  <rect id="cursor" width="14" height="20" fill="#00ff00" style="filter: drop-shadow(0px 0px 8px #00ff00);"></rect>
+  <rect id="cursor" width="10" height="16" fill="#c9d1d9" style="filter: drop-shadow(0px 0px 5px #c9d1d9);"></rect>
 
   <script>
     (function() {
@@ -24,10 +34,10 @@
       // Constants and state variables
       const svgWidth = 498;
       const svgHeight = 498;
-      const charWidth = 12; // Approximate character width
-      const lineHeight = 28; // Vertical spacing between lines
+      const charWidth = 8; // Approximate character width
+      const lineHeight = 22; // Vertical spacing between lines
       const textStartX = svgWidth / 2; // Center horizontally
-      const textStartY = (svgHeight - codeLines.length * lineHeight) / 2 + 10; // Center vertically
+      const textStartY = 80; // Center vertically with offset
       const textElement = document.getElementById("codeText");
       const cursor = document.getElementById("cursor");
       let lineIndex = 0;
@@ -73,8 +83,8 @@
           textElement.appendChild(tspan);
         }
         // Update cursor position
-        const cursorX = textStartX + currentLine.length * charWidth - 6;
-        const cursorY = textStartY + lineIndex * lineHeight - 22;
+        const cursorX = textStartX + currentLine.length * charWidth - 5;
+        const cursorY = textStartY + lineIndex * lineHeight - 16;
         cursor.setAttribute("x", cursorX);
         cursor.setAttribute("y", cursorY);
       }
