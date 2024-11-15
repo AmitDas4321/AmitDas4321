@@ -1,7 +1,7 @@
-<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
-  <!-- Primary text "AMITDAS" with color animation for "AMIT" part -->
-  <text x="10" y="35" font-size="30" font-family="Arial, sans-serif" font-weight="bold" fill="black">
-    AMITDAS
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Primary text "AMIT" with color animation -->
+  <text x="50" y="60" font-size="50" font-family="Arial, sans-serif" font-weight="bold" fill="black">
+    AMIT
     <animate
       attributeName="fill"
       values="black;#DD0009;black"
@@ -10,10 +10,10 @@
       keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
       calcMode="spline" />
   </text>
-  
-  <!-- Overlay for "DAS" with opposite color animation -->
-  <text x="10" y="35" font-size="30" font-family="Arial, sans-serif" font-weight="bold" fill="#DD0009" clip-path="url(#mask)">
-    AMITDAS
+
+  <!-- Secondary text "DAS" with color animation -->
+  <text x="180" y="60" font-size="50" font-family="Arial, sans-serif" font-weight="bold" fill="#DD0009">
+    DAS
     <animate
       attributeName="fill"
       values="#DD0009;black;#DD0009"
@@ -22,11 +22,4 @@
       keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
       calcMode="spline" />
   </text>
-
-  <!-- Mask to isolate "DAS" section -->
-  <defs>
-    <clipPath id="mask">
-      <rect x="80" y="0" width="120" height="50" />
-    </clipPath>
-  </defs>
 </svg>
