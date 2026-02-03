@@ -9,7 +9,7 @@
 
   <br><br>
 
-  ![](https://profileviews.blueorbitdevs.workers.dev/?username=quickpanel&color=006C9C)
+  ![](https://profileviews.blueorbitdevs.workers.dev/?username=AmitDas4321&color=006C9C)
 
   <div>&nbsp;</div>
 
