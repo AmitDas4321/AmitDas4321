@@ -9,7 +9,7 @@
 
   <br><br>
 
-  ![](https://komarev.com/ghpvc/?username=amit-das&color=006C9C)
+  ![](https://profileviews.blueorbitdevs.workers.dev/?username=AmitDas4321&color=006C9C)
 
   <div>&nbsp;</div>
 
