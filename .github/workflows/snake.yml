@@ -13,20 +13,23 @@ jobs:
       contents: write
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            /tmp/snake.svg
-            /tmp/snake-dark.svg?palette=github-dark
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
 
       - name: Push Snake to output branch
         run: |
           git clone --depth 1 --branch output https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git output
 
-          cp /tmp/snake.svg output/snake.svg
-          cp /tmp/snake-dark.svg output/snake-dark.svg
+          cp dist/snake.svg output/snake.svg
+          cp dist/snake-dark.svg output/snake-dark.svg
 
           cd output
 
