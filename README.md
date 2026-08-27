@@ -7,9 +7,9 @@
 
   <img align="right" alt="Coding" width="300" src="img/Coding.gif">
 
-  <br><br>
+<br><br>
 
-  ![](https://profileviews.blueorbitdevs.workers.dev/?username=AmitDas4321&color=006C9C)
+![](https://profileviews.blueorbitdevs.workers.dev/?username=AmitDas4321&color=006C9C)
 
   <div>&nbsp;</div>
 
@@ -42,6 +42,7 @@
 ## <img src="assets/images/Party Popper.webp" width ="22"> Interests and Hobbies
 
 In my free time, I enjoy:
+
 - Building innovative tools and apps for web users.
 - Music, gaming, and enjoying nature.
 - Inspiring others in the tech community.
@@ -67,9 +68,14 @@ Feel free to connect with me for collaborations or to share your ideas!
 <p align="center">
   <br>
   <kbd style="border: 2px solid #006C9C; padding: 10px; border-radius: 5px;">
-    <img alt="Banner" style="border: 1px solid #006C9C; border-radius: 5px;" src="https://raw.githubusercontent.com/AmitDas4321/AmitDas4321/output/github-contribution-grid-snake.svg" alt="Snake animation">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AmitDas4321/AmitDas4321/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AmitDas4321/AmitDas4321/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AmitDas4321/AmitDas4321/output/github-contribution-grid-snake.svg">
+</picture>
   </kbd>
 </p>
 
 ## <img src="assets/images/Writing Hand Light Skin Tone.png" width="25px"> Random Dev Quote
+
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
