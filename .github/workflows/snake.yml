@@ -1,20 +1,20 @@
-- uses: Platane/snk@v3
-  with:
-    # github user name to read the contribution graph from (**required**)
-    # using action context var `github.repository_owner` or specified user
-    github_user_name: ${{ github.repository_owner }}
+name: Generate GitHub Snake
 
-    # list of files to generate.
-    # one file per line. Each output can be customized with options as query string.
-    #
-    #  supported options:
-    #  - palette:           A preset of color, one of [github, github-dark, github-light]
-    #  - color_snake:       Color of the snake
-    #  - color_dots:        Coma separated list of dots color.
-    #                       The first one is 0 contribution, then it goes from the low contribution to the highest.
-    #                       Exactly 5 colors are expected.
-    #  - color_background:  Color of the background (for gif only)
-    outputs: |
-      dist/github-snake.svg
-      dist/github-snake-dark.svg?palette=github-dark
-      dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=%23bfd6f6,%238dbdff,%2364a1f4,%234b91f1,%233c7dd9&color_background=%23aaaaaa
