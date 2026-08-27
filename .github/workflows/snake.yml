@@ -9,12 +9,35 @@ jobs:
   generate:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=%23bfd6f6,%238dbdff,%2364a1f4,%234b91f1,%233c7dd9&color_background=%23aaaaaa
+            /tmp/snake.svg
+            /tmp/snake-dark.svg?palette=github-dark
+
+      - name: Push Snake to output branch
+        run: |
+          git clone --depth 1 --branch output https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git output
+
+          cp /tmp/snake.svg output/snake.svg
+          cp /tmp/snake-dark.svg output/snake-dark.svg
+
+          cd output
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add snake.svg snake-dark.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update GitHub contribution snake"
+            git push origin output
+          fi
